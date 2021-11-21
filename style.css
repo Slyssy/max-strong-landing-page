@@ -1,0 +1,72 @@
+@font-face {
+  font-family: Hellix;
+  src: url("Hellix-Regular.ttf");
+}
+@font-face {
+  font-family: Hellix;
+  src: url("Hellix-LightItalic.ttf") format("truetype");
+}
+@font-face {
+  font-family: Hellix;
+  src: url("Hellix-MediumItalic.woff") format("woff");
+}
+@font-face {
+  font-family: Hellix;
+  src: url("Hellix-Bold.ttf") format("truetype");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: Hellix;
+}
+
+.page-container {
+  width: 414px;
+  margin: 0 auto;
+  color: #111235;
+  font-style: normal;
+
+  background-color: rgb(234, 243, 246);
+}
+
+.page-title {
+  font-weight: 400;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.img-1 {
+  display: block;
+  width: 80%;
+  margin: 3rem auto 0 auto;
+}
+
+.subtitle-1 {
+  font-size: 64px;
+  font-weight: 400;
+  text-align: center;
+}
+
+p {
+  width: 382px;
+  text-align: center;
+  line-height: 24px;
+  display: block;
+  margin: 1rem auto 0 auto;
+}
+
+button {
+  background-color: #4b5092;
+  color: #fff;
+  width: 252px;
+  height: 59px;
+  border-radius: 35px;
+  display: block;
+  margin: 2rem auto 0 auto;
+}
