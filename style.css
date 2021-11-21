@@ -31,8 +31,6 @@ body {
   margin: 0 auto;
   color: #111235;
   font-style: normal;
-
-  background-color: rgb(234, 243, 246);
 }
 
 .page-title {
@@ -41,7 +39,7 @@ body {
   margin-top: 2rem;
 }
 
-.img-1 {
+img {
   display: block;
   width: 80%;
   margin: 3rem auto 0 auto;
@@ -51,6 +49,7 @@ body {
   font-size: 64px;
   font-weight: 400;
   text-align: center;
+  line-height: 75px;
 }
 
 p {
@@ -63,10 +62,76 @@ p {
 
 button {
   background-color: #4b5092;
+  font-size: 18px;
+  font-weight: 600;
   color: #fff;
   width: 252px;
   height: 59px;
+  border: none;
   border-radius: 35px;
   display: block;
   margin: 2rem auto 0 auto;
+}
+
+.img-2 {
+  margin-bottom: 3rem;
+}
+
+.color-text-block {
+  background-color: #f2f8ff;
+  padding: 3rem 1rem;
+}
+
+.subtitle-2 {
+  width: 360px;
+  font-size: 48px;
+  font-weight: 500;
+  text-align: left;
+  line-height: 58px;
+  margin-left: 10px;
+}
+
+.color-text-block p {
+  text-align: left;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.gradient-block {
+  margin-top: 5rem;
+  padding: 3rem 0 rem 0;
+  background: linear-gradient(99.85deg, #bad5ff 0%, #6487bf 100%);
+}
+.subtitle-3 {
+  display: block;
+  width: 399px;
+  font-size: 48px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 58px;
+}
+
+.bio {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.gradient-text {
+  line-height: 24px;
+}
+
+.button-2 {
+  background-color: #fff;
+  color: #436baa;
+}
+
+.img-4 {
+  display: block;
+  margin-top: 4rem;
+}
+
+.benefits-text {
+  font-size: 48px;
+  line-height: 58px;
+  text-align: left;
 }
