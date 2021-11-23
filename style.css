@@ -27,12 +27,6 @@ body {
   font-family: Hellix;
 }
 
-img {
-  display: block;
-  width: 80%;
-  margin: 3rem auto 0 auto;
-}
-
 p {
   width: 382px;
   text-align: center;
@@ -72,6 +66,12 @@ h5 {
   font-weight: 400;
   text-align: center;
   margin-top: 2rem;
+}
+
+.img-1 {
+  display: block;
+  width: 80%;
+  margin: 3rem auto 0 auto;
 }
 
 .subtitle-1 {
@@ -139,10 +139,6 @@ h5 {
   background-color: #f0f6ff;
   padding-top: 5rem;
   padding-bottom: 5rem;
-}
-.img-4 {
-  display: block;
-  margin: 0;
 }
 
 .benefits-text {
@@ -253,8 +249,9 @@ hr {
   }
   .desktop-container {
     display: block;
-    min-width: 992px;
+    max-width: 1300px;
     padding: 5rem;
+    margin: 0 auto;
   }
 
   /* # CSS Style below is order as it appears on the page */
@@ -274,8 +271,8 @@ hr {
 
   .nav-links {
     display: flex;
-    margin-right: 10rem;
-    gap: 2rem;
+    flex-basis: 50%;
+    justify-content: space-around;
     padding: 1.5rem;
   }
 
@@ -287,7 +284,9 @@ hr {
 
   .row-1-left {
     flex-basis: 50%;
+    justify-self: center;
     align-self: center;
+    padding: 2rem;
   }
 
   .subtitle-1 {
@@ -305,24 +304,34 @@ hr {
     margin-left: 0;
   }
 
+  .row-1-right {
+    flex-basis: 50%;
+  }
+
+  .img-1 {
+    margin: 0;
+    width: 100%;
+  }
   /** ------------Row 2 Elements------------ */
   .row-2-container {
     display: flex;
     align-items: center;
+    padding: 1.5rem;
   }
 
   .row-2-left {
     flex-basis: 50%;
+    padding: 2rem;
   }
 
   .img-2 {
-    width: 80%;
+    width: 100%;
     margin: 0;
   }
 
   .color-text-block {
     border-radius: 50px;
-    height: 85%;
+    height: 50%;
     padding: 2rem;
     justify-self: flex-start;
     margin-left: 2rem;
@@ -386,9 +395,14 @@ hr {
     flex-basis: 60%;
   }
 
-  .benefits-box-text {
-    margin-left: 40px;
+  .b-box-size {
+    width: 48%;
   }
+
+  .benefits-box-text {
+    margin-left: 5%;
+  }
+
   .row-5-right {
     flex-basis: 40%;
     align-self: center;
