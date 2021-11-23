@@ -15,6 +15,7 @@
   src: url("Hellix-Bold.ttf") format("truetype");
 }
 
+/* !-----------Global CSS------------- */
 * {
   margin: 0;
   padding: 0;
@@ -26,30 +27,10 @@ body {
   font-family: Hellix;
 }
 
-.mobile-page-container {
-  width: 414px;
-  margin: 0 auto;
-  color: #111235;
-  font-style: normal;
-}
-
-.page-title {
-  font-weight: 400;
-  text-align: center;
-  margin-top: 2rem;
-}
-
 img {
   display: block;
   width: 80%;
   margin: 3rem auto 0 auto;
-}
-
-.subtitle-1 {
-  font-size: 64px;
-  font-weight: 400;
-  text-align: center;
-  line-height: 75px;
 }
 
 p {
@@ -71,6 +52,33 @@ button {
   border-radius: 35px;
   display: block;
   margin: 2rem auto 0 auto;
+}
+
+h5 {
+  display: block;
+  font-size: 24px;
+  padding: 50px 40px 0px 40px;
+}
+
+/*! ------------Mobile CSS------------ */
+.mobile-page-container {
+  width: 414px;
+  margin: 0 auto;
+  color: #111235;
+  font-style: normal;
+}
+
+.page-title {
+  font-weight: 400;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.subtitle-1 {
+  font-size: 64px;
+  font-weight: 400;
+  text-align: center;
+  line-height: 75px;
 }
 
 .img-2 {
@@ -125,6 +133,8 @@ button {
   color: #436baa;
 }
 
+/*! ------------Bottom Half Mobile Color Change ------------ */
+
 .bottom-half-container {
   background-color: #f0f6ff;
   padding-top: 5rem;
@@ -147,12 +157,6 @@ button {
   margin: 10px auto;
   background-color: #e4f0ff;
   border-radius: 30px;
-}
-
-h5 {
-  display: block;
-  font-size: 24px;
-  padding: 50px 40px 0px 40px;
 }
 
 .benefits-box-text {
@@ -242,6 +246,7 @@ hr {
 }
 
 /*! Medium devices (landscape tablets, 1205px and up) */
+
 @media only screen and (min-width: 992px) {
   .mobile-page-container {
     display: none;
@@ -252,6 +257,10 @@ hr {
     padding: 5rem;
   }
 
+  /* # CSS Style below is order as it appears on the page */
+  /* # Elements go left to right then top to bottom */
+
+  /**------------Navigation Row Elements------------ */
   nav {
     display: flex;
     justify-content: space-between;
@@ -270,6 +279,7 @@ hr {
     padding: 1.5rem;
   }
 
+  /** ------------Row 1 Elements------------ */
   .row-1-container {
     display: flex;
     padding: 1.5rem;
@@ -295,6 +305,7 @@ hr {
     margin-left: 0;
   }
 
+  /** ------------Row 2 Elements------------ */
   .row-2-container {
     display: flex;
     align-items: center;
@@ -317,6 +328,7 @@ hr {
     margin-left: 2rem;
   }
 
+  /** ------------Gradient Trainer Image Elements------------ */
   .gradient-block {
     display: flex;
     width: 100%;
@@ -338,6 +350,7 @@ hr {
     margin: 0 0 0 20%;
   }
 
+  /**------------ Row 4 Elements ------------ */
   .row-4-container {
     display: flex;
     align-items: center;
@@ -363,6 +376,7 @@ hr {
     justify-self: flex-start;
   }
 
+  /* *------------ Row 5 Elements ------------ */
   .row-5-container {
     display: flex;
     padding: 4rem;
@@ -395,6 +409,7 @@ hr {
     gap: 2%;
   }
 
+  /* *------------ Footer Elements ------------ */
   footer {
     display: flex;
     justify-content: space-between;
@@ -434,11 +449,6 @@ hr {
 
   .email {
     margin: 1.25rem 0;
-  }
-
-  .send-icon {
-    top: 20%;
-    right: 30%;
   }
 
   .copyright {
