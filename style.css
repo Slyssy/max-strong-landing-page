@@ -49,23 +49,30 @@ button {
 }
 
 h5 {
-  display: block;
   font-size: 24px;
-  padding: 50px 40px 0px 40px;
 }
 
 /*! ------------Mobile CSS------------ */
-.mobile-page-container {
+.page-container {
   width: 414px;
   margin: 0 auto;
   color: #111235;
   font-style: normal;
 }
 
+.header-nav {
+  display: none;
+}
+
+.header-box {
+  text-align: center;
+  width: 100%;
+  margin: 2rem auto 0 auto;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.04), 0px 2px 6px rgba(0, 0, 0, 0.04),
+    0px 0px 1px rgba(0, 0, 0, 0.04);
+}
 .page-title {
   font-weight: 400;
-  text-align: center;
-  margin-top: 2rem;
 }
 
 .img-1 {
@@ -132,6 +139,7 @@ h5 {
 .button-2 {
   background-color: #fff;
   color: #436baa;
+  padding: 1rem;
 }
 
 /*! ------------Bottom Half Mobile Color Change ------------ */
@@ -154,13 +162,14 @@ h5 {
   margin: 10px auto;
   background-color: #e4f0ff;
   border-radius: 30px;
+  padding: 50px 40px;
 }
 
 .benefits-box-text {
   width: 299px;
   text-align: left;
   line-height: 24px;
-  padding: 10px 40px 0 0px;
+  padding: 10px 40px 0 0;
 }
 
 .benefits-box-2 {
@@ -169,12 +178,17 @@ h5 {
   margin: 10px auto;
   background: rgba(114, 122, 239, 0.1);
   border-radius: 30px;
+  padding: 50px 40px;
 }
 
 .button-3 {
   margin-bottom: 4rem;
 }
 
+.nav-title {
+  padding: 2rem;
+  text-align: center;
+}
 ul {
   list-style-type: none;
 }
@@ -242,52 +256,48 @@ hr {
   margin-top: 4rem;
 }
 
+.row-4 {
+  display: none;
+}
 /*! Medium devices (landscape tablets, 992px and up) */
 
 @media only screen and (min-width: 992px) {
-  .mobile-page-container {
+  .mobile-only {
     display: none;
   }
-  .desktop-container {
-    display: block;
+
+  .page-container {
+    width: 100%;
     max-width: 1300px;
-    padding: 5rem;
-    margin: 0 auto;
   }
 
-  /* # CSS Style below is order as it appears on the page */
-  /* # Elements go left to right then top to bottom */
-
-  /**------------Navigation Row Elements------------ */
-  nav {
+  .top-container {
+    padding: 0 5rem;
+  }
+  .header-box {
+    box-shadow: none;
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
 
-  .page-title {
-    margin: 0;
-    padding: 1.5rem;
-  }
-
-  .nav-links {
+  .header-nav {
     display: flex;
-    flex-basis: 50%;
+    flex-basis: 40%;
     justify-content: space-around;
-    padding: 1.5rem;
   }
 
-  /** ------------Row 1 Elements------------ */
-  .row-1-container {
+  .row-1 {
     display: flex;
-    padding: 1.5rem;
+    justify-content: space-between;
+    align-items: center;
   }
 
   .row-1-left {
+    order: -1;
     flex-basis: 50%;
-    justify-self: center;
-    align-self: center;
-    padding: 2rem;
+    justify-self: flex-start;
+    padding: 3rem 0;
   }
 
   .subtitle-1 {
@@ -297,177 +307,163 @@ hr {
 
   p {
     text-align: left;
-    margin: 0;
-    padding-top: 1rem;
+    width: 95%;
+    margin: 0.8rem 0;
   }
 
   button {
-    margin-left: 0;
+    margin: 1.5rem 0;
+    width: 151.2px;
+    height: 40.4px;
+    font-weight: 400;
+    font-size: 14px;
   }
 
   .row-1-right {
     flex-basis: 50%;
+    justify-self: flex-start;
+    align-self: center;
   }
 
   .img-1 {
-    margin: 0;
     width: 100%;
+    margin: 0;
   }
-  /** ------------Row 2 Elements------------ */
-  .row-2-container {
+
+  .row-2 {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    padding: 1.5rem;
   }
 
   .row-2-left {
     flex-basis: 50%;
-    padding: 2rem;
   }
 
-  .img-2 {
-    width: 100%;
-    margin: 0;
+  .row-2-right {
+    flex-basis: 50%;
+    height: auto;
   }
 
   .color-text-block {
     border-radius: 50px;
-    height: 50%;
-    padding: 2rem;
-    justify-self: flex-start;
-    margin-left: 2rem;
   }
 
-  /** ------------Gradient Trainer Image Elements------------ */
   .gradient-block {
-    display: flex;
+    padding: 0;
+    margin: 16px -0.5px 0 -0.5px;
     width: 100%;
-    justify-content: center;
   }
-
-  .gradient-block-left {
-    flex-basis: 50%;
-  }
-
-  .gradient-block-right {
-    flex-basis: 50%;
-    align-self: center;
-    justify-self: flex-start;
-  }
-
-  .img-3 {
-    width: 60%;
-    margin: 0 0 0 20%;
-  }
-
-  /**------------ Row 4 Elements ------------ */
-  .row-4-container {
+  .row-3 {
     display: flex;
-    align-items: center;
-    padding-top: 4rem;
   }
 
-  .row-4-left {
-    flex-basis: 70%;
+  .row-3-left {
+    order: -1;
+    flex-basis: 50%;
     padding-left: 4rem;
   }
 
-  .benefits-text {
-    padding: 0;
-    width: 100%;
+  .img-3 {
+    margin-bottom: -5px;
   }
 
-  .row-4-right {
-    flex-basis: 30%;
+  .row-3-right {
+    flex-basis: 50%;
+    align-self: center;
+    justify-self: center;
+    padding: 3rem 3rem 3rem 1rem;
+  }
+
+  .row-3-right p {
+    margin-left: 0.7rem;
+  }
+
+  .bottom-half-container {
+    padding: 0 5rem;
+    margin-top: -0.5px;
+  }
+  .row-4 {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5rem;
+    margin-bottom: 2rem;
+  }
+
+  .row-4-left {
+    flex-basis: 50%;
   }
 
   .button-3 {
-    margin: 0;
-    justify-self: flex-start;
+    margin-bottom: 0;
   }
 
-  /* *------------ Row 5 Elements ------------ */
-  .row-5-container {
+  .row-5 {
     display: flex;
-    padding: 4rem;
+    /* flex-wrap: wrap; */
+    align-items: center;
+    margin-bottom: 4rem;
   }
 
   .row-5-left {
-    flex-basis: 60%;
-  }
-
-  .b-box-size {
-    width: 48%;
-  }
-
-  .benefits-box-text {
-    margin-left: 5%;
+    order: -1;
+    flex-basis: 600px;
   }
 
   .row-5-right {
-    flex-basis: 40%;
-    align-self: center;
+    flex-basis: 600px;
   }
 
   .img-4 {
-    margin-top: 0;
-    width: 100%;
+    width: 400px;
   }
-
   .row-5-left-top {
     display: flex;
-    gap: 2%;
+    gap: 1rem;
+    flex: 1 800px;
   }
 
   .row-5-left-bottom {
     display: flex;
-    gap: 2%;
+    gap: 1rem;
+    width: 800px;
   }
 
-  /* *------------ Footer Elements ------------ */
-  footer {
+  hr {
+    width: 100%;
+  }
+
+  .row-6 {
     display: flex;
     justify-content: space-between;
-    padding: 2rem 2rem 0 2rem;
+    padding-top: 2.5rem;
   }
 
-  .footer-column-1 {
-    flex-basis: 30%;
-  }
-
-  .page-title-2 {
+  .nav-title {
+    padding: 0;
     font-weight: 400;
-    padding: 0.8rem 3rem;
-  }
-  .footer-column-2 {
-    flex-basis: 15%;
+    line-height: 40px;
   }
 
-  .footer-column-3 {
-    flex-basis: 15%;
-    padding-right: 2rem;
-  }
-
-  footer ul {
-    line-height: 3rem;
-  }
-
-  .footer-column-4 {
-    flex-basis: 30%;
+  .nav-links {
+    text-align: left;
+    column-count: 2;
+    line-height: 40px;
   }
 
   h6 {
     text-align: left;
-    font-weight: 400;
-    padding-top: 0.9rem;
+    line-height: 40px;
   }
 
   .email {
-    margin: 1.25rem 0;
+    margin: 0;
+  }
+  .social-links {
+    display: none;
   }
 
   .copyright {
     margin: 0;
-    padding: 0 5rem;
   }
 }
